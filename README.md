@@ -9,7 +9,8 @@ A player can also choose to hold (stop rolling the die) if they do not want to t
 When a player reaches a total of 100 or more points, the game ends and that player is the winner.
 
 ## Website
-The link to the game : 
+The link to the game: https://pig-game-sg.netlify.app/
+
 The website has been hosted using [Netlifly](netlify.com)
 
 ## License
