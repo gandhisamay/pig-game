@@ -83,4 +83,13 @@ newGame.addEventListener('click',()=>{
   player2.classList.remove('not-chance');
 })
 
+if(totalScore[0] >= 100 || totalScore[1] >= 100){
+  if(totalScore[0] >= 100){
+    document.querySelector('.player1 h1').innerText = 'WINNER';
+  }
+  else{
+    document.querySelector('.player2 h1').innerText = 'WINNER';
+  }
+}
+
 
