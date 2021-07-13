@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body{
+    background-image: linear-gradient(to right, #753682 0%, #bf2e34 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito';
+}
+
+.game{
+    width: 60rem;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-evenly;
+    background-color: #ffccd5;
+    border-radius: 1.5rem;
+}
+.player1, .player2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.player1 h1, .player2 h1{
+    font-size: 3rem;
+}
+
+.player1-total-score,.player2-total-score{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.player1-round-score-container{
+    width: 13rem;
+    height: 8rem;
+    background-color:#c7365f;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.player1-round-score, .player2-round-score{
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+
+.game-btn-dice-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-btn-dice-img img{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    border-radius: 1rem;
+}
+
+.game-btn-dice-img button{
+    border: none;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    opacity: 0.8;
+}
+
+.game-btn-dice-img .roll-dice{
+    margin-top: 5rem;
+}
+
+.game-btn-dice-img button:hover{
+    transform: translateY(-0.5rem);
+    transition: transform 300ms ease-in-out;
+}
