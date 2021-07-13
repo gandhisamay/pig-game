@@ -36,12 +36,24 @@ hold.addEventListener("click", () => {
   setTimeout(() => {
     hold.classList.remove("onclick");
   }, 300);
+  if ((totalScore[0] >= 100) || (totalScore[1] >= 100)) {
+    if (totalScore[0] >= 100) {
+      document.querySelectorAll('h1')[0].innerText = "WINNER";
+      hold.disabled = true; 
+      rollDice.disabled = true;
+    } else {
+      document.querySelectorAll('h1')[1].innerText = "WINNER";
+      hold.disabled = true; 
+      rollDice.disabled = true;
+    }
+  }
 });
 
 rollDice.addEventListener("click", () => {
   rollDice.classList.add("onclick");
   let diceScore = generateDiceScore();
   diceImg.src = `dice-${diceScore}.png`;
+  console.log('H2');
   if (playerChance === 1) {
     roundScore[0] += diceScore;
     document.querySelector(".player1-round-score").innerText = roundScore[0];
@@ -69,6 +81,8 @@ rollDice.addEventListener("click", () => {
 });
 
 newGame.addEventListener("click", () => {
+  rollDice.disabled = false;
+  hold.disabled = false;
   newGame.classList.add("onclick");
   roundScore = [0, 0];
   totalScore = [0, 0];
@@ -82,11 +96,3 @@ newGame.addEventListener("click", () => {
   player1.classList.remove("not-chance");
   player2.classList.remove("not-chance");
 });
-
-if (totalScore[0] >= 100 || totalScore[1] >= 100) {
-  if (totalScore[0] >= 100) {
-    document.querySelector(".player1 h1").innerText = "WINNER";
-  } else {
-    document.querySelector(".player2 h1").innerText = "WINNER";
-  }
-}
