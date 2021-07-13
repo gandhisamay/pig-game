@@ -1,4 +1,4 @@
-# Pig-game
+# Pig Game
 A easy and riveting game, made using html, css and javascript. 
 
 ## How to play
