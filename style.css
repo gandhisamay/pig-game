@@ -209,3 +209,6 @@ body{
 .onclick{
   box-shadow: none !important;
 }
+.not-chance{
+  opacity: 0.6;
+}
